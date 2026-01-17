@@ -1,0 +1,8 @@
+Package: hallways
+Version: {version}
+Section: games
+Priority: optional
+Architecture: amd64
+Maintainer: tlonny (timlonsdale@gmail.com)
+Homepage: https://hallways.lonnycorp.com
+Description: {DESCRIPTION}
