@@ -1,4 +1,4 @@
-import { BORDER_COLOR } from "@src/constant"
+import { BORDER_COLOR } from "@www/constant"
 import { node } from "@lonnycorp/htmlforge"
 
 type CodeBlockParams = {

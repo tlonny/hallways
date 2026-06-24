@@ -28,7 +28,7 @@ jobs:
 
       - run: bun ci
 
-      - run: bun run build
+      - run: bun run build:www
 
       - uses: actions/upload-pages-artifact@v3
         with:

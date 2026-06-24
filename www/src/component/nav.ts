@@ -1,4 +1,4 @@
-import { GUIDE_PATH, HOME_PATH, LINK_COLOR } from "@src/constant"
+import { GUIDE_PATH, HOME_PATH, LINK_COLOR } from "@www/constant"
 import { node } from "@lonnycorp/htmlforge"
 
 type NavLink = {

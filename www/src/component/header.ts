@@ -1,5 +1,5 @@
-import { HIGHLIGHT_COLOR, MOBILE_MEDIA_QUERY } from "@src/constant"
-import { Nav } from "@src/component/nav"
+import { HIGHLIGHT_COLOR, MOBILE_MEDIA_QUERY } from "@www/constant"
+import { Nav } from "@www/component/nav"
 import { node } from "@lonnycorp/htmlforge"
 
 type HeaderParams = {

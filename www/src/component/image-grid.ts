@@ -1,4 +1,4 @@
-import { BLACK_COLOR, MOBILE_MEDIA_QUERY } from "@src/constant"
+import { BLACK_COLOR, MOBILE_MEDIA_QUERY } from "@www/constant"
 import { node } from "@lonnycorp/htmlforge"
 
 export class ImageGrid implements node.Buildable {

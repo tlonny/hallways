@@ -1,4 +1,4 @@
-import { BORDER_COLOR, TEXT_COLOR } from "@src/constant"
+import { BORDER_COLOR, TEXT_COLOR } from "@www/constant"
 import { node } from "@lonnycorp/htmlforge"
 
 export class Table implements node.Buildable {

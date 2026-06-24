@@ -1,4 +1,4 @@
-import { HIGHLIGHT_COLOR } from "@src/constant"
+import { HIGHLIGHT_COLOR } from "@www/constant"
 import { node } from "@lonnycorp/htmlforge"
 
 export enum Kind {
