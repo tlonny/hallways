@@ -13,38 +13,38 @@ use winit::event::KeyEvent;
 use winit::event_loop::ActiveEventLoop;
 use winit::window::Window;
 
-use crate::audio::CrossFader;
-use crate::audio::Data;
-use crate::audio::Speaker;
-use crate::game::state::actor::Intent;
-use crate::game::state::actor::Kinematics;
-use crate::game::state::menu;
-use crate::game::state::Debug;
-use crate::game::state::Scene;
-use crate::gpu::bind_group::Composite;
-use crate::gpu::bind_group::Overlay;
-use crate::gpu::bind_group::Portal;
-use crate::gpu::bind_group::World;
-use crate::gpu::buffer::uniform::{self, resolution};
-use crate::gpu::buffer::vertex::{self, overlay};
-use crate::gpu::pipeline;
-use crate::gpu::texture::Array;
-use crate::gpu::texture::Color;
-use crate::gpu::texture::Depth;
-use crate::gpu::texture::OitAccum;
-use crate::gpu::texture::OitReveal;
-use crate::level::render::PortalFrameBuffer;
-use crate::level::Cache;
-use crate::settings::Settings;
-use crate::sprite::TextureKind;
-use crate::util;
-use crate::ASSET;
+use crate::hallways::audio::CrossFader;
+use crate::hallways::audio::Data;
+use crate::hallways::audio::Speaker;
+use crate::hallways::game::state::actor::Intent;
+use crate::hallways::game::state::actor::Kinematics;
+use crate::hallways::game::state::menu;
+use crate::hallways::game::state::Debug;
+use crate::hallways::game::state::Scene;
+use crate::hallways::gpu::bind_group::Composite;
+use crate::hallways::gpu::bind_group::Overlay;
+use crate::hallways::gpu::bind_group::Portal;
+use crate::hallways::gpu::bind_group::World;
+use crate::hallways::gpu::buffer::uniform::{self, resolution};
+use crate::hallways::gpu::buffer::vertex::{self, overlay};
+use crate::hallways::gpu::pipeline;
+use crate::hallways::gpu::texture::Array;
+use crate::hallways::gpu::texture::Color;
+use crate::hallways::gpu::texture::Depth;
+use crate::hallways::gpu::texture::OitAccum;
+use crate::hallways::gpu::texture::OitReveal;
+use crate::hallways::level::render::PortalFrameBuffer;
+use crate::hallways::level::Cache;
+use crate::hallways::settings::Settings;
+use crate::hallways::sprite::TextureKind;
+use crate::hallways::util;
+use crate::hallways::{AUDIO, TEXTURE};
 
-use crate::game::state::{Keyboard, Mouse};
+use crate::hallways::game::state::{Keyboard, Mouse};
 
-const JINGLE_AUDIO_PATH: &str = "audio/jingle.wav";
-const SELECT_AUDIO_PATH: &str = "audio/select.wav";
-const MOVE_AUDIO_PATH: &str = "audio/move.wav";
+const JINGLE_AUDIO_PATH: &str = "jingle.wav";
+const SELECT_AUDIO_PATH: &str = "select.wav";
+const MOVE_AUDIO_PATH: &str = "move.wav";
 const AUDIO_CHANNEL_COUNT: u16 = 2;
 const AUDIO_SAMPLE_RATE: u32 = 48_000;
 const OVERLAY_MODEL_VERTEX_CAPACITY: usize = 50_000;
@@ -118,15 +118,15 @@ impl Game {
         let mut cross_fader = CrossFader::create();
         mixer_ctrl.add(cross_fader.source());
         let jingle_data =
-            Data::create(ASSET.get_file(JINGLE_AUDIO_PATH).unwrap().contents(), false).unwrap();
+            Data::create(AUDIO.get_file(JINGLE_AUDIO_PATH).unwrap().contents(), false).unwrap();
         let jingle_speaker = Speaker::create(jingle_data);
         mixer_ctrl.add(jingle_speaker.source());
         let select_data =
-            Data::create(ASSET.get_file(SELECT_AUDIO_PATH).unwrap().contents(), false).unwrap();
+            Data::create(AUDIO.get_file(SELECT_AUDIO_PATH).unwrap().contents(), false).unwrap();
         let select_speaker = Speaker::create(select_data);
         mixer_ctrl.add(select_speaker.source());
         let move_data =
-            Data::create(ASSET.get_file(MOVE_AUDIO_PATH).unwrap().contents(), false).unwrap();
+            Data::create(AUDIO.get_file(MOVE_AUDIO_PATH).unwrap().contents(), false).unwrap();
         let move_speaker = Speaker::create(move_data);
         mixer_ctrl.add(move_speaker.source());
         let state_scene = Scene::new();
@@ -212,7 +212,7 @@ impl Game {
         let sprite_texture = Array::create(&device, SPRITE_TEXTURE_SIZE, TextureKind::COUNT);
         for kind in TextureKind::iter() {
             let data = kind.data();
-            let image = image::load_from_memory(ASSET.get_file(data.path).unwrap().contents())
+            let image = image::load_from_memory(TEXTURE.get_file(data.path).unwrap().contents())
                 .unwrap()
                 .to_rgba8();
             sprite_texture.write(&queue, data.ix as usize, &image);

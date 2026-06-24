@@ -1,7 +1,7 @@
 use bytemuck::{Pod, Zeroable};
 use glam::Vec2;
 
-use crate::util;
+use crate::hallways::util;
 
 const OVERLAY_VERTEX_SHADER_LOCATION_POSITION: u32 = 0;
 const OVERLAY_VERTEX_SHADER_LOCATION_UV: u32 = 1;

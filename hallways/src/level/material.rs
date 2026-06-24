@@ -1,10 +1,10 @@
 use std::collections::HashMap;
 
-use crate::gpu::bind_group;
-use crate::gpu::bind_group::TEXTURE_BUCKETS;
-use crate::gpu::buffer::storage::{self, material_index};
-use crate::gpu::texture::Array;
-use crate::util;
+use crate::hallways::gpu::bind_group;
+use crate::hallways::gpu::bind_group::TEXTURE_BUCKETS;
+use crate::hallways::gpu::buffer::storage::{self, material_index};
+use crate::hallways::gpu::texture::Array;
+use crate::hallways::util;
 
 use super::manifest::{Manifest, Material, TextureAddressing};
 

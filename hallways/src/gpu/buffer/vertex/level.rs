@@ -1,7 +1,7 @@
 use bytemuck::{Pod, Zeroable};
 use glam::{Vec2, Vec3};
 
-use crate::util;
+use crate::hallways::util;
 
 const LEVEL_VERTEX_SHADER_LOCATION_POSITION: u32 = 0;
 const LEVEL_VERTEX_SHADER_LOCATION_DIFFUSE_UV: u32 = 1;

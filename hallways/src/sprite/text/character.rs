@@ -1,7 +1,7 @@
 use glam::Vec2;
 
-use crate::sprite::{Quad, TextureKind};
-use crate::util;
+use crate::hallways::sprite::{Quad, TextureKind};
+use crate::hallways::util;
 
 const TEXT_WIDTH: f32 = 8.0;
 const TEXT_HEIGHT: f32 = 16.0;

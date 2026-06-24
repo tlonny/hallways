@@ -1,9 +1,9 @@
-use crate::gpu::bind_group::Portal;
-use crate::gpu::bind_group::World;
-use crate::gpu::buffer::uniform;
-use crate::gpu::pipeline;
-use crate::gpu::render_pass::world;
-use crate::gpu::texture::Color;
+use crate::hallways::gpu::bind_group::Portal;
+use crate::hallways::gpu::bind_group::World;
+use crate::hallways::gpu::buffer::uniform;
+use crate::hallways::gpu::pipeline;
+use crate::hallways::gpu::render_pass::world;
+use crate::hallways::gpu::texture::Color;
 
 use super::Level;
 

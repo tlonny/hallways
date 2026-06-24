@@ -1,8 +1,8 @@
 use glam::Vec3;
 use parry3d::math::{Isometry, Vector};
 
-use crate::level::cache::CacheEntry;
-use crate::level::Cache;
+use crate::hallways::level::cache::CacheEntry;
+use crate::hallways::level::Cache;
 
 use super::Kinematics;
 

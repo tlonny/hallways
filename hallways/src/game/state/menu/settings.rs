@@ -2,7 +2,7 @@ use strum::{EnumCount, EnumIter, IntoEnumIterator};
 use url::Url;
 use winit::keyboard::KeyCode;
 
-use crate::settings;
+use crate::hallways::settings;
 
 const ADJUST_STEP: f32 = 0.1;
 

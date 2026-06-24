@@ -3,9 +3,9 @@ use std::path::Path;
 use std::process::Command;
 
 use super::build::LINUX_TARGET;
-use crate::artifact::Artifact;
-use crate::icon::RELEASE_ICONSET_DIR;
-use crate::{hallways_version_read, APP_NAME, DESCRIPTION, RELEASE_DIST_PATH};
+use crate::release::artifact::Artifact;
+use crate::release::icon::RELEASE_ICONSET_DIR;
+use crate::release::{hallways_version_read, APP_NAME, DESCRIPTION, RELEASE_DIST_PATH};
 
 fn executable_set(path: &Path) {
     let status = Command::new("chmod").arg("755").arg(path).status().unwrap();

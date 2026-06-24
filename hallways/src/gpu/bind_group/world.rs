@@ -1,4 +1,4 @@
-use crate::gpu::buffer::uniform;
+use crate::hallways::gpu::buffer::uniform;
 
 pub struct World {
     bind_group: wgpu::BindGroup,

@@ -1,10 +1,10 @@
 use glam::Vec3;
 
-use crate::game::state::actor::Intent;
-use crate::game::state::actor::Kinematics;
-use crate::game::state::actor::Stance;
-use crate::level::Cache;
-use crate::util::parry3d::cylinder::Ext;
+use crate::hallways::game::state::actor::Intent;
+use crate::hallways::game::state::actor::Kinematics;
+use crate::hallways::game::state::actor::Stance;
+use crate::hallways::level::Cache;
+use crate::hallways::util::parry3d::cylinder::Ext;
 
 const STAND_DELTA: f32 = 0.7;
 

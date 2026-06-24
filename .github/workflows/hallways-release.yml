@@ -70,7 +70,7 @@ jobs:
         with:
           name: linux-build
           path: |
-            dist/release/hallways-*-linux-*
+            dist/hallways/hallways-*-linux-*
           if-no-files-found: error
 
   build-windows:
@@ -92,7 +92,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: win-build
-          path: dist/release/hallways-*-windows-*
+          path: dist/hallways/hallways-*-windows-*
           if-no-files-found: error
 
   release:

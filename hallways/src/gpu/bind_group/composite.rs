@@ -1,5 +1,5 @@
-use crate::gpu::texture::OitAccum;
-use crate::gpu::texture::OitReveal;
+use crate::hallways::gpu::texture::OitAccum;
+use crate::hallways::gpu::texture::OitReveal;
 
 pub struct Composite {
     bind_group: wgpu::BindGroup,

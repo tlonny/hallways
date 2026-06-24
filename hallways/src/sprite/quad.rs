@@ -1,8 +1,8 @@
 use glam::Vec2;
 
-use crate::gpu::buffer::vertex::overlay;
-use crate::sprite::TextureKind;
-use crate::util;
+use crate::hallways::gpu::buffer::vertex::overlay;
+use crate::hallways::sprite::TextureKind;
+use crate::hallways::util;
 
 // CCW winding: TL(0), BL(1), BR(2), TL(0), BR(2), TR(3)
 const WINDING: [usize; 6] = [0, 1, 2, 0, 2, 3];

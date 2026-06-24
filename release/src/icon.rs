@@ -22,8 +22,8 @@ pub enum IconSpec {
     Icon256,
 }
 
-pub const RELEASE_ICONSET_DIR: &str = "dist/release/Hallways.iconset";
-const ICON_SOURCE_PATH: &str = "asset/icon.png";
+pub const RELEASE_ICONSET_DIR: &str = "dist/hallways/Hallways.iconset";
+const ICON_SOURCE_PATH: &str = "release/image/icon.png";
 
 impl IconSpec {
     fn data(&self) -> IconSpecData {

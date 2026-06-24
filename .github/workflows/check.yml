@@ -13,6 +13,10 @@ jobs:
         with:
           components: clippy, rustfmt
 
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.3.5
+
       - name: Install system dependencies
         run: |
           sudo apt-get update
@@ -26,6 +30,8 @@ jobs:
             libudev-dev \
             pkg-config
 
+      - run: bun ci
+      - run: bun run check
       - run: cargo fmt -- --check
       - run: cargo fetch --locked
       - run: cargo check

@@ -8,7 +8,7 @@ use winit::event_loop::ActiveEventLoop;
 use winit::event_loop::EventLoop;
 use winit::window::WindowId;
 
-use crate::game::Game;
+use crate::hallways::game::Game;
 
 pub const SIM_STEP: Duration = Duration::from_millis(10);
 

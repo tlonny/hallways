@@ -1,6 +1,6 @@
 use winit::event_loop::ActiveEventLoop;
 
-use crate::game::state::scene::Kind;
+use crate::hallways::game::state::scene::Kind;
 
 use super::effect::{actor, cursor, debug, menu, simulation};
 use super::Game;

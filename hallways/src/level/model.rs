@@ -1,9 +1,9 @@
 use glam::Vec2;
 
-use crate::gltf::Mesh;
-use crate::gpu::buffer;
-use crate::gpu::buffer::vertex::{self, level};
-use crate::util;
+use crate::hallways::gltf::Mesh;
+use crate::hallways::gpu::buffer;
+use crate::hallways::gpu::buffer::vertex::{self, level};
+use crate::hallways::util;
 
 use super::manifest::Material;
 

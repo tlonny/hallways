@@ -1,9 +1,9 @@
-use crate::gpu::bind_group::Level;
-use crate::gpu::bind_group::Portal;
-use crate::gpu::bind_group::World;
-use crate::gpu::buffer::{self, vertex};
-use crate::gpu::pipeline;
-use crate::util;
+use crate::hallways::gpu::bind_group::Level;
+use crate::hallways::gpu::bind_group::Portal;
+use crate::hallways::gpu::bind_group::World;
+use crate::hallways::gpu::buffer::{self, vertex};
+use crate::hallways::gpu::pipeline;
+use crate::hallways::util;
 
 const DRAW_BIND_GROUP_INDEX: u32 = 0;
 const WORLD_BIND_GROUP_INDEX: u32 = 1;

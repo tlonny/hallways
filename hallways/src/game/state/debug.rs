@@ -1,6 +1,6 @@
 use std::collections::VecDeque;
 
-use crate::sprite::text::Character;
+use crate::hallways::sprite::text::Character;
 
 pub const CHARACTER_DIMENSIONS: glam::UVec2 = glam::UVec2::new(96, 32);
 

@@ -1,4 +1,4 @@
-use crate::gpu::bind_group;
+use crate::hallways::gpu::bind_group;
 
 const SHADER_PATH: &str = "composite.wgsl";
 
@@ -11,9 +11,14 @@ impl Composite {
         let shader = device.create_shader_module(wgpu::ShaderModuleDescriptor {
             label: None,
             source: wgpu::ShaderSource::Wgsl(
-                std::str::from_utf8(crate::SHADER.get_file(SHADER_PATH).unwrap().contents())
-                    .unwrap()
-                    .into(),
+                std::str::from_utf8(
+                    crate::hallways::SHADER
+                        .get_file(SHADER_PATH)
+                        .unwrap()
+                        .contents(),
+                )
+                .unwrap()
+                .into(),
             ),
         });
 

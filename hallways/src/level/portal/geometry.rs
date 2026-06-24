@@ -1,6 +1,6 @@
 use glam::Vec3;
 
-use crate::gltf::Vertex;
+use crate::hallways::gltf::Vertex;
 
 #[derive(Debug)]
 pub enum DecodeError {

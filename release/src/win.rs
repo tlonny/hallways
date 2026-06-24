@@ -4,13 +4,13 @@ use std::process::Command;
 
 use ico::{IconDir, IconDirEntry, IconImage, ResourceType};
 
-use crate::artifact::Artifact;
-use crate::hallways_version_read;
-use crate::icon::{self, IconSpec, RELEASE_ICONSET_DIR};
-use crate::RELEASE_DIST_PATH;
+use crate::release::artifact::Artifact;
+use crate::release::hallways_version_read;
+use crate::release::icon::{self, IconSpec, RELEASE_ICONSET_DIR};
+use crate::release::RELEASE_DIST_PATH;
 
 const WINDOWS_TARGET: &str = "x86_64-pc-windows-msvc";
-const WINDOWS_ICON_PATH: &str = "dist/release/hallways.ico";
+const WINDOWS_ICON_PATH: &str = "dist/hallways/hallways.ico";
 
 const ICON_SPECS: &[IconSpec] = &[
     IconSpec::Icon16,
@@ -54,14 +54,12 @@ fn ico_render(iconset_path: &Path, ico_path: &Path) {
 fn windows_build_with_icon(ico_path: &Path) {
     let mut cmd = Command::new("cargo");
     cmd.arg("build")
-        .arg("--package")
-        .arg("hallways")
         .arg("--release")
         .arg("--target")
         .arg(WINDOWS_TARGET)
         .arg("--bin")
         .arg("hallways")
-        .env("ICO_PATH", ico_path);
+        .env("BUILD_WIN_ICO_PATH", ico_path);
 
     let status = cmd.status().unwrap();
     if !status.success() {

@@ -1,0 +1,6 @@
+{
+    "frames": ["frame1.png", "frame2.png"],
+    "animation_speed": 1.0,
+    "color": [255, 255, 255, 255],
+    "texture_addressing": "Linear"
+}

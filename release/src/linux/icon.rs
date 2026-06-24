@@ -1,4 +1,4 @@
-use crate::icon::{self, IconSpec};
+use crate::release::icon::{self, IconSpec};
 
 const ICON_SPECS: &[IconSpec] = &[
     IconSpec::Icon16,

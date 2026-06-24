@@ -1,7 +1,7 @@
-use crate::gpu::bind_group::Overlay;
-use crate::gpu::buffer::vertex::{self, overlay};
-use crate::gpu::pipeline;
-use crate::gpu::render_pass::flat;
+use crate::hallways::gpu::bind_group::Overlay;
+use crate::hallways::gpu::buffer::vertex::{self, overlay};
+use crate::hallways::gpu::pipeline;
+use crate::hallways::gpu::render_pass::flat;
 
 pub struct RenderParams<'a> {
     pub queue: &'a wgpu::Queue,
