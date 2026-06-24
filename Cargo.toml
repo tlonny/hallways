@@ -33,17 +33,6 @@ winit = { version = "0.30", features = ["serde"] }
 [build-dependencies]
 winresource = "0.1"
 
-[lib]
-path = "lib.rs"
-
-[[bin]]
-name = "hallways"
-path = "hallways/main.rs"
-
-[[bin]]
-name = "release"
-path = "release/src/main.rs"
-
 [lints.clippy]
 module_inception = "allow"
 needless_return = "allow"
