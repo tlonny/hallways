@@ -4,7 +4,7 @@
   "packageManager": "bun@1.3.5",
   "type": "module",
   "scripts": {
-    "build": "bun www/src/main.ts",
+    "build:www": "bun www/build.ts",
     "check": "bun run typecheck && bun run lint",
     "lint": "eslint --max-warnings=0",
     "typecheck": "tsc --noEmit"

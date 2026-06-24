@@ -5,7 +5,7 @@
         "module": "ESNext",
         "moduleDetection": "force",
         "paths": {
-            "@src/*": ["./www/src/*"]
+            "@www/*": ["./www/src/*"]
         },
         "moduleResolution": "bundler",
         "allowImportingTsExtensions": true,

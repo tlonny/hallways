@@ -1,4 +1,4 @@
-import { MOBILE_MEDIA_QUERY } from "@src/constant"
+import { MOBILE_MEDIA_QUERY } from "@www/constant"
 import { node } from "@lonnycorp/htmlforge"
 
 const MAIN_GAP = "26px"

@@ -1,4 +1,4 @@
-import { BACKGROUND_COLOR, TEXT_COLOR } from "@src/constant"
+import { BACKGROUND_COLOR, TEXT_COLOR } from "@www/constant"
 import { node } from "@lonnycorp/htmlforge"
 
 const BODY_PADDING = "22px 0 0"

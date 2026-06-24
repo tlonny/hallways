@@ -1,4 +1,4 @@
-import { FAVICON_IMAGE } from "@src/image"
+import { FAVICON_IMAGE } from "@www/image"
 import { node } from "@lonnycorp/htmlforge"
 
 const HIGHLIGHT_CSS_URL = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/base16/gruvbox-light-hard.min.css"

@@ -38,7 +38,7 @@ path = "lib.rs"
 
 [[bin]]
 name = "hallways"
-path = "hallways/src/main.rs"
+path = "hallways/main.rs"
 
 [[bin]]
 name = "release"

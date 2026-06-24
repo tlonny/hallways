@@ -1,4 +1,4 @@
-import { BLACK_COLOR } from "@src/constant"
+import { BLACK_COLOR } from "@www/constant"
 import { node } from "@lonnycorp/htmlforge"
 
 const FOOTER_FONT_SIZE = "14px"

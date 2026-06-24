@@ -1,9 +1,9 @@
 import { copyFileSync, mkdirSync, rmSync, writeFileSync } from "fs"
 import { dirname, join } from "path"
-import { GUIDE_PATH, HOME_PATH } from "@src/constant"
-import { IMAGES, type Image } from "@src/image"
-import { guide, home } from "@src/page"
-import { ROOT_DIRECTORY } from "@src/root"
+import { GUIDE_PATH, HOME_PATH } from "@www/constant"
+import { IMAGES, type Image } from "@www/image"
+import { guide, home } from "@www/page"
+import { ROOT_DIRECTORY } from "@www/root"
 
 type Page = {
     path: string

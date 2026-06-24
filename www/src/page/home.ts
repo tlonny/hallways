@@ -1,6 +1,6 @@
-import * as component from "@src/component"
-import { DEKU_IMAGE, DUST_DOOM_IMAGE, DUST_NUKE_IMAGE, NUKE_BLOCKFORT_IMAGE } from "@src/image"
-import { shim } from "@src/shim"
+import * as component from "@www/component"
+import { DEKU_IMAGE, DUST_DOOM_IMAGE, DUST_NUKE_IMAGE, NUKE_BLOCKFORT_IMAGE } from "@www/image"
+import { shim } from "@www/shim"
 import { Document, node } from "@lonnycorp/htmlforge"
 
 const TITLE = "Hallways"
