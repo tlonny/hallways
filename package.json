@@ -1,5 +1,4 @@
 {
-  "name": "@lonnycorp/hallways-www",
   "private": true,
   "packageManager": "bun@1.3.5",
   "type": "module",

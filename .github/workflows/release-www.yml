@@ -1,4 +1,4 @@
-name: Website
+name: Release WWW
 
 on:
   push:
@@ -10,7 +10,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: website
+  group: release-www
   cancel-in-progress: false
 
 jobs:
