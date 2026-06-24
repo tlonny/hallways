@@ -4,10 +4,8 @@
   "workspaces": {
     "": {
       "name": "@lonnycorp/hallways-www",
-      "dependencies": {
-        "@lonnycorp/htmlforge": "0.1.2",
-      },
       "devDependencies": {
+        "@lonnycorp/htmlforge": "0.1.2",
         "@stylistic/eslint-plugin": "^5.5.0",
         "@types/bun": "latest",
         "@typescript-eslint/eslint-plugin": "^8.46.3",

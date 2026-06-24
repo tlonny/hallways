@@ -2,7 +2,8 @@ Hallways
 =====
 
 ![Check](https://github.com/tlonny/hallways/actions/workflows/check.yml/badge.svg)
-![Release](https://github.com/tlonny/hallways/actions/workflows/hallways-release.yml/badge.svg)
+![Release Hallways](https://github.com/tlonny/hallways/actions/workflows/release-hallways.yml/badge.svg)
+![Release WWW](https://github.com/tlonny/hallways/actions/workflows/release-www.yml/badge.svg)
 
 Hallways is a free, open-source, first-person "web browser" for 3D spaces. Instead of hyperlinks, spaces are connected by portals that can be seamlessly walked through with no interruption/loading screen.
 
