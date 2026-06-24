@@ -8,7 +8,7 @@ use std::collections::{HashMap, HashSet};
 use std::sync::OnceLock;
 use url::Url;
 
-use crate::util;
+use crate::hallways::util;
 
 use fetch::fetch;
 

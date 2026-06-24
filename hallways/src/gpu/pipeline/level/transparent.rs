@@ -1,6 +1,6 @@
-use crate::gpu::bind_group::Level;
-use crate::gpu::bind_group::World;
-use crate::gpu::buffer::vertex;
+use crate::hallways::gpu::bind_group::Level;
+use crate::hallways::gpu::bind_group::World;
+use crate::hallways::gpu::buffer::vertex;
 
 const SHADER_PATH: &str = "level.wgsl";
 const OIT_ACCUM_FORMAT: wgpu::TextureFormat = wgpu::TextureFormat::Rgba16Float;
@@ -15,9 +15,14 @@ impl Transparent {
         let shader = device.create_shader_module(wgpu::ShaderModuleDescriptor {
             label: None,
             source: wgpu::ShaderSource::Wgsl(
-                std::str::from_utf8(crate::SHADER.get_file(SHADER_PATH).unwrap().contents())
-                    .unwrap()
-                    .into(),
+                std::str::from_utf8(
+                    crate::hallways::SHADER
+                        .get_file(SHADER_PATH)
+                        .unwrap()
+                        .contents(),
+                )
+                .unwrap()
+                .into(),
             ),
         });
 

@@ -2,11 +2,11 @@ use glam::Vec3;
 use parry3d::math::Isometry;
 use parry3d::query::PointQuery;
 
-use crate::app::SIM_STEP;
-use crate::game::state::actor::Intent;
-use crate::game::state::actor::Kinematics;
-use crate::game::state::actor::Stance;
-use crate::level::Cache;
+use crate::hallways::app::SIM_STEP;
+use crate::hallways::game::state::actor::Intent;
+use crate::hallways::game::state::actor::Kinematics;
+use crate::hallways::game::state::actor::Stance;
+use crate::hallways::level::Cache;
 
 const EPSILON: f32 = 0.001;
 const GROUND_NORMAL_Y_MIN: f32 = 0.7;

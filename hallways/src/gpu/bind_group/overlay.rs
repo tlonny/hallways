@@ -1,6 +1,6 @@
-use crate::gpu::buffer::uniform;
-use crate::gpu::texture::Array;
-use crate::gpu::texture::Sampler;
+use crate::hallways::gpu::buffer::uniform;
+use crate::hallways::gpu::texture::Array;
+use crate::hallways::gpu::texture::Sampler;
 
 pub struct Overlay {
     bind_group: wgpu::BindGroup,

@@ -1,16 +1,16 @@
 use glam::Vec2;
 use winit::keyboard::KeyCode;
 
-use crate::game::state::debug::CHARACTER_DIMENSIONS;
-use crate::game::state::scene::Kind;
-use crate::game::state::Debug;
-use crate::game::state::Keyboard;
-use crate::game::state::Scene;
-use crate::gpu::buffer::vertex::overlay;
-use crate::sprite::system::Solid;
-use crate::sprite::text::character::TEXT_SIZE;
-use crate::sprite::text::Character;
-use crate::util;
+use crate::hallways::game::state::debug::CHARACTER_DIMENSIONS;
+use crate::hallways::game::state::scene::Kind;
+use crate::hallways::game::state::Debug;
+use crate::hallways::game::state::Keyboard;
+use crate::hallways::game::state::Scene;
+use crate::hallways::gpu::buffer::vertex::overlay;
+use crate::hallways::sprite::system::Solid;
+use crate::hallways::sprite::text::character::TEXT_SIZE;
+use crate::hallways::sprite::text::Character;
+use crate::hallways::util;
 
 const BACKGROUND_OPACITY: f32 = 0.5;
 const SCREEN_PADDING: f32 = 6.0;

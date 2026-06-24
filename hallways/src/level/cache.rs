@@ -6,7 +6,7 @@ use std::thread::{self, JoinHandle};
 use lru::LruCache;
 use url::Url;
 
-use crate::util;
+use crate::hallways::util;
 
 use super::{Level, LoadError};
 

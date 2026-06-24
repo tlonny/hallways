@@ -1,7 +1,7 @@
 use parry3d::math::Point;
 use parry3d::shape::TriMesh;
 
-use crate::gltf::Mesh;
+use crate::hallways::gltf::Mesh;
 
 pub trait Ext {
     fn from_gltf_mesh(mesh: &Mesh) -> TriMesh;

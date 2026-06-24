@@ -1,9 +1,9 @@
 use glam::{Mat3, Vec2, Vec3};
 
-use crate::app::SIM_STEP;
-use crate::game::state::actor::Intent;
-use crate::game::state::actor::Kinematics;
-use crate::game::state::actor::Stance;
+use crate::hallways::app::SIM_STEP;
+use crate::hallways::game::state::actor::Intent;
+use crate::hallways::game::state::actor::Kinematics;
+use crate::hallways::game::state::actor::Stance;
 
 const SIM_STEP_SECS: f32 = SIM_STEP.as_secs_f32();
 

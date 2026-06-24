@@ -9,12 +9,12 @@ use parry3d::query::{cast_shapes, ShapeCastHit, ShapeCastOptions};
 use parry3d::shape::{Shape, TriMesh};
 use url::Url;
 
-use crate::gltf::{Error, Mesh};
-use crate::gpu::buffer;
-use crate::gpu::buffer::vertex::{self, portal};
-use crate::level::cache::CacheEntry;
-use crate::level::Cache;
-use crate::util::parry3d::trimesh::Ext;
+use crate::hallways::gltf::{Error, Mesh};
+use crate::hallways::gpu::buffer;
+use crate::hallways::gpu::buffer::vertex::{self, portal};
+use crate::hallways::level::cache::CacheEntry;
+use crate::hallways::level::Cache;
+use crate::hallways::util::parry3d::trimesh::Ext;
 
 use self::geometry::DecodeError;
 use super::manifest::Manifest;

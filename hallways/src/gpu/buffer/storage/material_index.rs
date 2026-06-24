@@ -3,7 +3,7 @@ use std::num::NonZeroU64;
 
 use bytemuck::{Pod, Zeroable};
 
-use crate::util;
+use crate::hallways::util;
 
 pub const MAX_MATERIAL_ID: usize = 0x1FF;
 const MAX_FRAMES: usize = 0x1000;

@@ -1,17 +1,17 @@
-use crate::game::state::actor::Kinematics;
-use crate::game::state::scene::Kind;
-use crate::game::state::Scene;
-use crate::gpu::bind_group::Composite;
-use crate::gpu::bind_group::World;
-use crate::gpu::buffer::uniform::{self, camera};
-use crate::gpu::pipeline;
-use crate::gpu::render_pass::flat;
-use crate::gpu::render_pass::world::{Color, Oit};
-use crate::gpu::texture::OitAccum;
-use crate::gpu::texture::OitReveal;
-use crate::level::cache::CacheEntry;
-use crate::level::render::PortalFrameBuffer;
-use crate::level::Cache;
+use crate::hallways::game::state::actor::Kinematics;
+use crate::hallways::game::state::scene::Kind;
+use crate::hallways::game::state::Scene;
+use crate::hallways::gpu::bind_group::Composite;
+use crate::hallways::gpu::bind_group::World;
+use crate::hallways::gpu::buffer::uniform::{self, camera};
+use crate::hallways::gpu::pipeline;
+use crate::hallways::gpu::render_pass::flat;
+use crate::hallways::gpu::render_pass::world::{Color, Oit};
+use crate::hallways::gpu::texture::OitAccum;
+use crate::hallways::gpu::texture::OitReveal;
+use crate::hallways::level::cache::CacheEntry;
+use crate::hallways::level::render::PortalFrameBuffer;
+use crate::hallways::level::Cache;
 
 pub struct RenderParams<'a> {
     pub state_scene: &'a Scene,

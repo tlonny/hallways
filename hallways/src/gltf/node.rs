@@ -1,7 +1,7 @@
 use glam::{Mat4, Vec2, Vec3};
 
 use super::{Error, Mesh, Vertex};
-use crate::util;
+use crate::hallways::util;
 
 pub fn walk_node(
     node: &::gltf::Node,

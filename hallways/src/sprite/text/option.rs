@@ -2,9 +2,9 @@ use glam::Vec2;
 
 use super::character::TEXT_SIZE;
 use super::Character;
-use crate::gpu::buffer::vertex::overlay;
-use crate::sprite::system::Selector;
-use crate::util;
+use crate::hallways::gpu::buffer::vertex::overlay;
+use crate::hallways::sprite::system::Selector;
+use crate::hallways::util;
 
 const INDENT: f32 = TEXT_SIZE.x + 2.0;
 

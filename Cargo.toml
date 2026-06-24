@@ -1,8 +1,14 @@
-[workspace]
-members = ["hallways", "release"]
-resolver = "2"
+[package]
+name = "hallways"
+version = "0.1.0"
+edition = "2021"
+authors = ["tlonny (timlonsdale@gmail.com)"]
+description = "First-person exploration game of internet-hosted 3D spaces linked by URL portals."
+homepage = "https://hallways.lonnycorp.com"
+license = "CC-BY-NC-ND-4.0"
+build = "build.rs"
 
-[workspace.dependencies]
+[dependencies]
 bytemuck = { version = "1", features = ["derive"] }
 dirs = "5"
 env_logger = "0.11"
@@ -22,10 +28,23 @@ strum = { version = "0.26", features = ["derive"] }
 ureq = "2"
 url = { version = "2", features = ["serde"] }
 wgpu = "23"
-winresource = "0.1"
 winit = { version = "0.30", features = ["serde"] }
 
-[workspace.lints.clippy]
+[build-dependencies]
+winresource = "0.1"
+
+[lib]
+path = "lib.rs"
+
+[[bin]]
+name = "hallways"
+path = "hallways/src/main.rs"
+
+[[bin]]
+name = "release"
+path = "release/src/main.rs"
+
+[lints.clippy]
 module_inception = "allow"
 needless_return = "allow"
 upper_case_acronyms = "allow"

@@ -1,7 +1,7 @@
 use glam::Vec2;
 
-use crate::sprite::{Quad, TextureKind};
-use crate::util;
+use crate::hallways::sprite::{Quad, TextureKind};
+use crate::hallways::util;
 
 const UV_POSITION: Vec2 = Vec2::new(32.0, 0.0);
 const UV_SIZE: Vec2 = Vec2::splat(16.0);

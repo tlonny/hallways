@@ -1,6 +1,6 @@
 use glam::{Vec2, Vec3};
 
-use crate::util;
+use crate::hallways::util;
 
 #[derive(Clone, Copy)]
 pub struct Vertex {

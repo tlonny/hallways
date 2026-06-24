@@ -4,12 +4,12 @@ mod intent;
 mod slide;
 mod teleport;
 
-use crate::audio::CrossFader;
-use crate::game::state::actor::Intent;
-use crate::game::state::actor::Kinematics;
-use crate::game::state::scene::Kind;
-use crate::game::state::Scene;
-use crate::level::Cache;
+use crate::hallways::audio::CrossFader;
+use crate::hallways::game::state::actor::Intent;
+use crate::hallways::game::state::actor::Kinematics;
+use crate::hallways::game::state::scene::Kind;
+use crate::hallways::game::state::Scene;
+use crate::hallways::level::Cache;
 
 pub fn update(
     state_scene: &Scene,

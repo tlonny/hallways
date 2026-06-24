@@ -4,23 +4,23 @@ use std::sync::Arc;
 use glam::{Vec2, Vec3};
 use winit::keyboard::KeyCode;
 
-use crate::audio::CrossFader;
-use crate::audio::Speaker;
-use crate::game::state::actor::Intent;
-use crate::game::state::actor::Kinematics;
-use crate::game::state::actor::Stance;
-use crate::game::state::menu;
-use crate::game::state::menu::intro::INTRO_DURATION_SECONDS;
-use crate::game::state::scene::Kind;
-use crate::game::state::Debug;
-use crate::game::state::Keyboard;
-use crate::game::state::Scene;
-use crate::gpu::buffer::vertex::overlay;
-use crate::level::cache::CacheEntry;
-use crate::level::Cache;
-use crate::sprite::text::character::TEXT_SIZE;
-use crate::sprite::text::Character;
-use crate::util;
+use crate::hallways::audio::CrossFader;
+use crate::hallways::audio::Speaker;
+use crate::hallways::game::state::actor::Intent;
+use crate::hallways::game::state::actor::Kinematics;
+use crate::hallways::game::state::actor::Stance;
+use crate::hallways::game::state::menu;
+use crate::hallways::game::state::menu::intro::INTRO_DURATION_SECONDS;
+use crate::hallways::game::state::scene::Kind;
+use crate::hallways::game::state::Debug;
+use crate::hallways::game::state::Keyboard;
+use crate::hallways::game::state::Scene;
+use crate::hallways::gpu::buffer::vertex::overlay;
+use crate::hallways::level::cache::CacheEntry;
+use crate::hallways::level::Cache;
+use crate::hallways::sprite::text::character::TEXT_SIZE;
+use crate::hallways::sprite::text::Character;
+use crate::hallways::util;
 
 const LOAD_RESULT_FADE_DURATION: f32 = 0.35;
 const RESULT_TEXT_MAX_LEN: usize = 96;
@@ -46,7 +46,7 @@ pub struct UpdateParams<'a> {
 }
 
 struct LevelStartParams<'a> {
-    level: &'a crate::level::Level,
+    level: &'a crate::hallways::level::Level,
     level_url: url::Url,
     kinematics: &'a mut Kinematics,
     intent: &'a mut Intent,

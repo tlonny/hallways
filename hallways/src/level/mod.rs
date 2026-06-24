@@ -1,11 +1,11 @@
 use std::collections::HashMap;
 use url::Url;
 
-use crate::audio::Data;
-use crate::gltf::Mesh;
-use crate::gpu::bind_group;
-use crate::gpu::buffer::{self, vertex};
-use crate::util::parry3d::trimesh::Ext;
+use crate::hallways::audio::Data;
+use crate::hallways::gltf::Mesh;
+use crate::hallways::gpu::bind_group;
+use crate::hallways::gpu::buffer::{self, vertex};
+use crate::hallways::util::parry3d::trimesh::Ext;
 use parry3d::shape::TriMesh;
 
 use self::manifest::Manifest;

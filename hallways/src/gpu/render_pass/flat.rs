@@ -1,7 +1,7 @@
-use crate::gpu::bind_group::Composite;
-use crate::gpu::bind_group::Overlay;
-use crate::gpu::buffer::vertex;
-use crate::gpu::pipeline;
+use crate::hallways::gpu::bind_group::Composite;
+use crate::hallways::gpu::bind_group::Overlay;
+use crate::hallways::gpu::buffer::vertex;
+use crate::hallways::gpu::pipeline;
 
 const BIND_GROUP_INDEX: u32 = 0;
 const VERTEX_BUFFER_SLOT: u32 = 0;

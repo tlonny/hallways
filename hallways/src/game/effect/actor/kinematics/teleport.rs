@@ -3,12 +3,12 @@ use std::sync::Arc;
 use glam::Vec3;
 use parry3d::math::{Isometry, Vector};
 
-use crate::audio::CrossFader;
-use crate::game::state::actor::Intent;
-use crate::game::state::actor::Kinematics;
-use crate::game::state::actor::Stance;
-use crate::level::cache::CacheEntry;
-use crate::level::Cache;
+use crate::hallways::audio::CrossFader;
+use crate::hallways::game::state::actor::Intent;
+use crate::hallways::game::state::actor::Kinematics;
+use crate::hallways::game::state::actor::Stance;
+use crate::hallways::level::cache::CacheEntry;
+use crate::hallways::level::Cache;
 
 pub fn teleport(
     kinematics: &mut Kinematics,

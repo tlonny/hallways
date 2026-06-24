@@ -1,4 +1,5 @@
 .tasks
+node_modules/
 target/
 dist/
 scratch/

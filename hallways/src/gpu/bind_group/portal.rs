@@ -1,5 +1,5 @@
-use crate::gpu::texture::Color;
-use crate::gpu::texture::Sampler;
+use crate::hallways::gpu::texture::Color;
+use crate::hallways::gpu::texture::Sampler;
 
 pub struct Portal {
     bind_group: wgpu::BindGroup,

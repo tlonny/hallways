@@ -1,8 +1,8 @@
 use glam::UVec2;
 
-use crate::gpu::buffer::storage;
-use crate::gpu::texture::Array;
-use crate::gpu::texture::Sampler;
+use crate::hallways::gpu::buffer::storage;
+use crate::hallways::gpu::texture::Array;
+use crate::hallways::gpu::texture::Sampler;
 
 const DIFFUSE_BINDING_START: u32 = 2;
 const MATERIAL_INDEX_BINDING: u32 = DIFFUSE_BINDING_START + TEXTURE_BUCKETS.len() as u32;

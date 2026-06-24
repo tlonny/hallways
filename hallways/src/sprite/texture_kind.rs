@@ -14,11 +14,11 @@ impl TextureKind {
         return match self {
             TextureKind::Text => Data {
                 ix: 0,
-                path: "texture/text.png",
+                path: "text.png",
             },
             TextureKind::System => Data {
                 ix: 1,
-                path: "texture/system.png",
+                path: "system.png",
             },
         };
     }

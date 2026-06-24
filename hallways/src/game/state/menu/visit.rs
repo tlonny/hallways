@@ -1,4 +1,4 @@
-use crate::settings::Settings;
+use crate::hallways::settings::Settings;
 use url::Url;
 
 #[derive(strum::EnumIter, strum::EnumCount, Clone, Copy, PartialEq, Eq)]

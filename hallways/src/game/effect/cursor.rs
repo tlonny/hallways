@@ -1,7 +1,7 @@
 use winit::window::{CursorGrabMode, Window};
 
-use crate::game::state::scene::Kind;
-use crate::game::state::Scene;
+use crate::hallways::game::state::scene::Kind;
+use crate::hallways::game::state::Scene;
 
 pub fn update(handle: &Window, state_scene: &Scene) {
     if !state_scene.transitioned() {

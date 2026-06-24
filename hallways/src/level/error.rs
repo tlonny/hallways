@@ -1,7 +1,7 @@
 use rodio::decoder::DecoderError;
 
-use crate::gltf;
-use crate::gpu::buffer::vertex;
+use crate::hallways::gltf;
+use crate::hallways::gpu::buffer::vertex;
 
 use super::manifest;
 use super::manifest::fetch::Error as ManifestFetchError;

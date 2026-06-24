@@ -3,7 +3,7 @@ use std::io::Read;
 
 use url::Url;
 
-use crate::util;
+use crate::hallways::util;
 
 #[derive(Debug)]
 pub enum Error {

@@ -1,14 +1,14 @@
 use glam::Vec2;
 
-use crate::gpu::bind_group::Composite;
-use crate::gpu::bind_group::Portal;
-use crate::gpu::bind_group::World;
-use crate::gpu::buffer::uniform::{self, resolution};
-use crate::gpu::texture::Color;
-use crate::gpu::texture::Depth;
-use crate::gpu::texture::OitAccum;
-use crate::gpu::texture::OitReveal;
-use crate::level::render::PortalFrameBuffer;
+use crate::hallways::gpu::bind_group::Composite;
+use crate::hallways::gpu::bind_group::Portal;
+use crate::hallways::gpu::bind_group::World;
+use crate::hallways::gpu::buffer::uniform::{self, resolution};
+use crate::hallways::gpu::texture::Color;
+use crate::hallways::gpu::texture::Depth;
+use crate::hallways::gpu::texture::OitAccum;
+use crate::hallways::gpu::texture::OitReveal;
+use crate::hallways::level::render::PortalFrameBuffer;
 
 use super::Game;
 

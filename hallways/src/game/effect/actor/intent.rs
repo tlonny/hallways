@@ -3,11 +3,11 @@ use std::time::{Duration, Instant};
 
 use glam::{Mat3, Vec2, Vec3};
 
-use crate::game::state::actor::Intent;
-use crate::game::state::scene::Kind;
-use crate::game::state::Keyboard;
-use crate::game::state::Scene;
-use crate::settings::{Action, Settings};
+use crate::hallways::game::state::actor::Intent;
+use crate::hallways::game::state::scene::Kind;
+use crate::hallways::game::state::Keyboard;
+use crate::hallways::game::state::Scene;
+use crate::hallways::settings::{Action, Settings};
 
 const PITCH_LIMIT: f32 = 1.53589;
 const BASE_MOUSE_SENSITIVITY: f32 = 0.002;

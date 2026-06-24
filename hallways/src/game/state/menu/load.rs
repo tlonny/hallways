@@ -1,6 +1,6 @@
 use std::time::Instant;
 
-use crate::sprite::text::Character;
+use crate::hallways::sprite::text::Character;
 
 pub struct Load {
     start_time: Instant,

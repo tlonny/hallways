@@ -1,4 +1,4 @@
-use crate::gpu::buffer::uniform::{camera, clock};
+use crate::hallways::gpu::buffer::uniform::{camera, clock};
 
 use super::effect::{level, overlay};
 use super::Game;

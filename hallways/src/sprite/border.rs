@@ -1,8 +1,8 @@
 use glam::Vec2;
 
-use crate::gpu::buffer::vertex::overlay;
-use crate::sprite::{Quad, TextureKind};
-use crate::util;
+use crate::hallways::gpu::buffer::vertex::overlay;
+use crate::hallways::sprite::{Quad, TextureKind};
+use crate::hallways::util;
 
 const BORDER: f32 = 3.0;
 

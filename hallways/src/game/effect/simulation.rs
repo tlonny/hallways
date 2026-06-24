@@ -1,9 +1,9 @@
 use winit::keyboard::KeyCode;
 
-use crate::audio::Speaker;
-use crate::game::state::scene::Kind;
-use crate::game::state::Keyboard;
-use crate::game::state::Scene;
+use crate::hallways::audio::Speaker;
+use crate::hallways::game::state::scene::Kind;
+use crate::hallways::game::state::Keyboard;
+use crate::hallways::game::state::Scene;
 
 pub fn update(state_scene: &mut Scene, keyboard: &Keyboard, move_speaker: &Speaker) {
     if !matches!(state_scene.scene(), Kind::Simulation) {

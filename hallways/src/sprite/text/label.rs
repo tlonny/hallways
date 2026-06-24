@@ -1,7 +1,7 @@
 use glam::Vec2;
 
-use crate::gpu::buffer::vertex::overlay;
-use crate::util;
+use crate::hallways::gpu::buffer::vertex::overlay;
+use crate::hallways::util;
 
 use super::character::TEXT_SIZE;
 use super::Character;
